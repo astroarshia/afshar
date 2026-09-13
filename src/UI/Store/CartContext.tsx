@@ -49,6 +49,7 @@ export function CartProvider({
         const parsedCart = JSON.parse(savedCart);
 
         if (Array.isArray(parsedCart)) {
+          // eslint-disable-next-line react-hooks/set-state-in-effect
           setItems(parsedCart);
         }
       }

@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowLeft } from "lucide-react";
-import LaptopCard, { Laptop } from "./LaptopCard";
+import LaptopCard from "./LaptopCard";
 import { laptops } from "@/src/UI/data/laptops";
 
 

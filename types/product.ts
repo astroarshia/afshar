@@ -1,0 +1,35 @@
+export type ProductImage = { url: string; alt: string };
+export type ProductVariant = { id: string; label: string; inStock: boolean };
+export type ProductSpec = { label: string; value: string };
+
+export type Product = {
+  id: string;
+  slug: string;
+  sku: string;
+  title: string;
+  brand: string;
+  category: string;
+  categorySlug: string;
+  tags: string[];
+  shortDescription: string;
+  description: string;
+  features: string[];
+  price: number;
+  compareAtPrice?: number;
+  currency: string;
+  discountPercent?: number;
+  images: ProductImage[];
+  video: string | null;
+  inStock: boolean;
+  stockCount: number;
+  availability: string;
+  rating: { value: number; count: number };
+  reviewSummary: Record<string, number>;
+  variants: ProductVariant[];
+  specs: ProductSpec[];
+  warranty: string;
+  warrantyDuration: string;
+  shipping: string;
+  shippingTime: string;
+  seller: { name: string; rating: number };
+};
